@@ -20,7 +20,6 @@ This is a simple REST API-based Jobs Management System built with Flask and the 
 
 ```bash
 git clone https://github.com/sohail-eng/job_management_APIs
-cd getsocial
 ```
 2. Create and activate a virtual environment:
 ```bash
