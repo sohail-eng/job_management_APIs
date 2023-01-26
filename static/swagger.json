@@ -1,0 +1,23 @@
+{
+    "openapi":"3.0.0.0",
+    "info":{
+        "description":"Flask Restful API's for developement purpose",
+        "version":"1.0.0",
+        "title":"Flask Restful API's",
+        "license":{
+            "name":"sohail",
+            "url":"https://www.google.com"
+        }
+    },
+    "tags":[
+        {
+            "name":"Social API",
+            "description":"Test API"
+        }
+    ],
+    "servers":[
+        {
+            "url":"/"
+        }
+    ]
+}

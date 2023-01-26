@@ -1,0 +1,211 @@
+{
+	"info": {
+		"_postman_id": "97fbe49f-5599-4540-9b13-1d5b77799fb6",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24683148"
+	},
+	"item": [
+		{
+			"name": "get jobs",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3NDQ2NDk4OSwianRpIjoiYjRmY2NkN2ItNzdlMS00NGQ0LTkyOTUtODY5M2M3OWU3N2I0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjc0NDY0OTg5LCJleHAiOjE2NzQ0NjU4ODl9.JpOOlqnzMiu6DP0jqTNYAqEarhKHedCall4moIlXmN8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/jobs",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete job",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3NDQ2Njg5OCwianRpIjoiODA2ZmM5NWItMzZkOS00NTdhLTkzNmMtNWQ0ZDIyMDY2YWEwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjc0NDY2ODk4LCJleHAiOjE2NzQ0Njc3OTh9.SgKhTbFbzBjyAWtz716rrmLNoUJe-jxN62Jq1RehIzc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"job_title\":\"Developer\",\r\n    \"job_description\":\"Any one can apply\",\r\n    \"job_rate\":50.5,\r\n    \"latitude\":200.2,\r\n    \"longitude\":301.6,\r\n    \"user_id\":2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/jobs/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"jobs",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put job",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3NDQ2Njg5OCwianRpIjoiODA2ZmM5NWItMzZkOS00NTdhLTkzNmMtNWQ0ZDIyMDY2YWEwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjc0NDY2ODk4LCJleHAiOjE2NzQ0Njc3OTh9.SgKhTbFbzBjyAWtz716rrmLNoUJe-jxN62Jq1RehIzc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3NDQ2MDQzOCwianRpIjoiYjdmNDg2YjItODJmOS00YTk1LWE0MDMtOWU4MDYyYjY0YjdjIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjc0NDYwNDM4LCJleHAiOjE2NzQ0NjEzMzh9.n8jS1mQnHQ8lyOU9AeqG_gaVvsBe9GRaSY-wA0eFO1M",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"job_title\":\"Developer\",\r\n    \"job_description\":\"Any one can apply\",\r\n    \"job_rate\":50.5,\r\n    \"latitude\":200.2,\r\n    \"longitude\":301.6,\r\n    \"user_id\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/jobs/2",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"jobs",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post job",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3NDQ2Njg5OCwianRpIjoiODA2ZmM5NWItMzZkOS00NTdhLTkzNmMtNWQ0ZDIyMDY2YWEwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjc0NDY2ODk4LCJleHAiOjE2NzQ0Njc3OTh9.SgKhTbFbzBjyAWtz716rrmLNoUJe-jxN62Jq1RehIzc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"job_title\":\"Developer 1\",\r\n    \"job_description\":\"Any one can apply soon\",\r\n    \"job_rate\":51.5,\r\n    \"latitude\":201.2,\r\n    \"longitude\":302.6,\r\n    \"user_id\":2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/jobs",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post user login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\":\"Sohail\",\r\n    \"last_name\":\"Amjad\",\r\n    \"email\":\"sohailamjad865@gmail.com\",\r\n    \"username\":\"sohail\",\r\n    \"password\":\"SohailAmjad@1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/login",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post user signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\":\"Ali\",\r\n    \"last_name\":\"Raza\",\r\n    \"email\":\"ali123@gmail.com\",\r\n    \"username\":\"ali123\",\r\n    \"password\":\"Ali123@123432\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
